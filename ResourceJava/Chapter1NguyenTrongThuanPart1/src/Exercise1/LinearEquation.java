@@ -3,20 +3,25 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Part1;
+package Exercise1;
 
 /**
  *
- * @author hv
+ * @author Nguyen Trong Thuan
+ * @date: 19/08/2016
+ * @version 1
+ * class linear equation
  */
 public class LinearEquation {
-
-    public double a;
-    public double b;
-    public final double GREATESTVALUE = 999999;
-    public final double LEASTVALUE = -999999;
+    double a;
+    double b;
 
     public LinearEquation() {
+    }
+
+    public LinearEquation(double a, double b) {
+        this.a = a;
+        this.b = b;
     }
 
     public double getA() {
@@ -35,29 +40,22 @@ public class LinearEquation {
         this.b = b;
     }
 
-    public double getGREATESTVALUE() {
-        return GREATESTVALUE;
-    }
-
-    public double getLEASTVALUE() {
-        return LEASTVALUE;
-    }
-
-    /* Function find root of linear Equation
+    /* Function calculate root of linear Equation
     ---Input: integer a, b
     ---Output: root of linear Equation
     */
-    public double findRoot() {
+    public double calculateRoot() {
         double root = 0;
-        if (a == 0) {
-            if (b == 0) {
-                root = GREATESTVALUE;
+        if (this.a == 0) {
+            if (this.b == 0) {
+                root = Double.MAX_VALUE;
             } else {
-                root = LEASTVALUE;
+                root = Double.MIN_VALUE;
             }
         } else {
-            root = -b / a;
+            root = -this.b / this.a;
         }
         return root;
     }
 }
+
