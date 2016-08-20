@@ -64,7 +64,7 @@ public class PerimeterJUnitTest {
         C.setPointO(O);
         C.setPointR(R);
         double ex = 6.28;
-        double ac = C.findPerimeter();
+        double ac = C.calculatePerimeter();
         assertEquals(ex, ac, 0);
     }
     
@@ -77,7 +77,7 @@ public class PerimeterJUnitTest {
         C.setPointO(O);
         C.setPointR(R);
         double ex = 6.28;
-        double ac = C.findPerimeter();
+        double ac = C.calculatePerimeter();
         assertEquals(ex, ac, 0);
     }
     
@@ -90,7 +90,7 @@ public class PerimeterJUnitTest {
         C.setPointO(O);
         C.setPointR(R);
         double ex = 6.28;
-        double ac = C.findPerimeter();
+        double ac = C.calculatePerimeter();
         assertEquals(ex, ac, 0);
     }
     
@@ -103,7 +103,7 @@ public class PerimeterJUnitTest {
         C.setPointO(O);
         C.setPointR(R);
         double ex = 6.28;
-        double ac = C.findPerimeter();
+        double ac = C.calculatePerimeter();
         assertEquals(ex, ac, 0);
     }
     
@@ -116,7 +116,7 @@ public class PerimeterJUnitTest {
         C.setPointO(O);
         C.setPointR(R);
         double ex = 12.56;
-        double ac = C.findPerimeter();
+        double ac = C.calculatePerimeter();
         assertEquals(ex, ac, 0);
     }
     
@@ -129,7 +129,7 @@ public class PerimeterJUnitTest {
         C.setPointO(O);
         C.setPointR(R);
         double ex = 12.56;
-        double ac = C.findPerimeter();
+        double ac = C.calculatePerimeter();
         assertEquals(ex, ac, 0);
     }
     
@@ -142,7 +142,7 @@ public class PerimeterJUnitTest {
         C.setPointO(O);
         C.setPointR(R);
         double ex = 12.56;
-        double ac = C.findPerimeter();
+        double ac = C.calculatePerimeter();
         assertEquals(ex, ac, 0);
     }
     
@@ -155,7 +155,7 @@ public class PerimeterJUnitTest {
         C.setPointO(O);
         C.setPointR(R);
         double ex = 12.56;
-        double ac = C.findPerimeter();
+        double ac = C.calculatePerimeter();
         assertEquals(ex, ac, 0);
     }
     
@@ -168,7 +168,7 @@ public class PerimeterJUnitTest {
         C.setPointO(O);
         C.setPointR(R);
         double ex = 6.28;
-        double ac = C.findPerimeter();
+        double ac = C.calculatePerimeter();
         assertEquals(ex, ac, 0);
     }
     
@@ -181,7 +181,7 @@ public class PerimeterJUnitTest {
         C.setPointO(O);
         C.setPointR(R);
         double ex = 6.28;
-        double ac = C.findPerimeter();
+        double ac = C.calculatePerimeter();
         assertEquals(ex, ac, 0);
     }
 }

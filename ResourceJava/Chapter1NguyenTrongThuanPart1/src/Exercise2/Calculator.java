@@ -67,7 +67,7 @@ public class Calculator {
      ---Output: a / b
      */
     public double calculateDevision() {
-        if (this.secondNumber == 0) {
+        if (this.secondNumber == 0) { // exception /0
             throw new ArithmeticException("devise for 0");
         }
         return this.firstNumber / this.secondNumber;

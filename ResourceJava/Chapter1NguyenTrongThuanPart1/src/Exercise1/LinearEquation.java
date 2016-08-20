@@ -48,9 +48,9 @@ public class LinearEquation {
         double root = 0;
         if (this.a == 0) {
             if (this.b == 0) {
-                root = Double.MAX_VALUE;
+                root = Double.MAX_VALUE; // equation have more root is return a constant
             } else {
-                root = Double.MIN_VALUE;
+                root = Double.MIN_VALUE; // equation have not root is return a constant
             }
         } else {
             root = -this.b / this.a;

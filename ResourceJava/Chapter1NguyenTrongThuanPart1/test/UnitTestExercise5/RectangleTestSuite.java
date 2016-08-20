@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package UnitTestExercise3;
+package UnitTestExercise5;
 
 import org.junit.After;
 import org.junit.AfterClass;
@@ -15,12 +15,12 @@ import org.junit.runners.Suite;
 /**
  *
  * @author Nguyen Trong Thuan
- * @date: 19/08/2016
+ * @date 19/08/2016
  * @version 1
  */
 @RunWith(Suite.class)
-@Suite.SuiteClasses({UnitTestExercise3.PointJUnitTest.class})
-public class PointTestSuite {
+@Suite.SuiteClasses({UnitTestExercise5.PerimeterJUnitTest.class, UnitTestExercise5.AreaJUnitTest.class})
+public class RectangleTestSuite {
 
     @BeforeClass
     public static void setUpClass() throws Exception {

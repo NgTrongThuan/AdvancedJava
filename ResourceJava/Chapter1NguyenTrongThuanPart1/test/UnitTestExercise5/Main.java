@@ -3,25 +3,23 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package UnitTestExercise3;
+package UnitTestExercise5;
+
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;
 import org.junit.runner.notification.Failure;
 
 /**
  *
- * @author Nguyen Trong Thuan
- * @date 19/08/2016
- * @version 1
+ * @author Win7-64 SP1
  */
 public class Main {
 
     /**
-     * Main method to run unit test
-     * Output: failure of Result
+     * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Result result = JUnitCore.runClasses(LineTestSuite.class);
+        Result result = JUnitCore.runClasses(RectangleTestSuite.class);
         for(Failure failure: result.getFailures()){
             System.out.println(failure.toString());
         }

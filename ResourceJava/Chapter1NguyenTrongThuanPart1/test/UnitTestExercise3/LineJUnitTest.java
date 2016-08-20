@@ -11,7 +11,7 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
-import Exercise3.Point;
+import Exercise3.*;
 
 /**
  *
@@ -19,9 +19,9 @@ import Exercise3.Point;
  * @date: 19/08/2016
  * @version 1
  */
-public class PointJUnitTest {
+public class LineJUnitTest {
     
-    public PointJUnitTest() {
+    public LineJUnitTest() {
     }
     
     @BeforeClass
@@ -47,6 +47,10 @@ public class PointJUnitTest {
     public Point B = new Point();
     
     /**
+     * Declare line
+     */
+    Line l = new Line();
+    /**
      * Unit test for function findDistanceFomular
      * Output: compare actual and expected
      */
@@ -56,8 +60,10 @@ public class PointJUnitTest {
         A.setY(0);
         B.setX(0);
         B.setY(1);
+        l.setFirstPoint(A);
+        l.setSecondPoint(B);
         double ex = 1;
-        double ac = A.findDistanceFormula(B);
+        double ac = l.calculateDistance();
         assertEquals(ex, ac, 0);
     }
     
@@ -67,8 +73,10 @@ public class PointJUnitTest {
         A.setY(0);
         B.setX(0);
         B.setY(2);
+        l.setFirstPoint(A);
+        l.setSecondPoint(B);
         double ex = 2;
-        double ac = A.findDistanceFormula(B);
+        double ac = l.calculateDistance();
         assertEquals(ex, ac, 0);
     }
     
@@ -78,8 +86,10 @@ public class PointJUnitTest {
         A.setY(0);
         B.setX(0);
         B.setY(3);
+        l.setFirstPoint(A);
+        l.setSecondPoint(B);
         double ex = 3;
-        double ac = A.findDistanceFormula(B);
+        double ac = l.calculateDistance();
         assertEquals(ex, ac, 0);
     }
     
@@ -89,8 +99,10 @@ public class PointJUnitTest {
         A.setY(0);
         B.setX(0);
         B.setY(4);
+        l.setFirstPoint(A);
+        l.setSecondPoint(B);
         double ex = 4;
-        double ac = A.findDistanceFormula(B);
+        double ac = l.calculateDistance();
         assertEquals(ex, ac, 0);
     }
     
@@ -100,8 +112,10 @@ public class PointJUnitTest {
         A.setY(0);
         B.setX(0);
         B.setY(5);
+        l.setFirstPoint(A);
+        l.setSecondPoint(B);
         double ex = 5;
-        double ac = A.findDistanceFormula(B);
+        double ac = l.calculateDistance();
         assertEquals(ex, ac, 0);
     }
     
@@ -111,8 +125,10 @@ public class PointJUnitTest {
         A.setY(0);
         B.setX(0);
         B.setY(6);
+        l.setFirstPoint(A);
+        l.setSecondPoint(B);
         double ex = 6;
-        double ac = A.findDistanceFormula(B);
+        double ac = l.calculateDistance();
         assertEquals(ex, ac, 0);
     }
     
@@ -122,8 +138,10 @@ public class PointJUnitTest {
         A.setY(0);
         B.setX(0);
         B.setY(7);
+        l.setFirstPoint(A);
+        l.setSecondPoint(B);
         double ex = 7;
-        double ac = A.findDistanceFormula(B);
+        double ac = l.calculateDistance();
         assertEquals(ex, ac, 0);
     }
     
@@ -133,8 +151,10 @@ public class PointJUnitTest {
         A.setY(0);
         B.setX(0);
         B.setY(8);
+        l.setFirstPoint(A);
+        l.setSecondPoint(B);
         double ex = 8;
-        double ac = A.findDistanceFormula(B);
+        double ac = l.calculateDistance();
         assertEquals(ex, ac, 0);
     }
     
@@ -144,8 +164,10 @@ public class PointJUnitTest {
         A.setY(0);
         B.setX(0);
         B.setY(9);
+        l.setFirstPoint(A);
+        l.setSecondPoint(B);
         double ex = 9;
-        double ac = A.findDistanceFormula(B);
+        double ac = l.calculateDistance();
         assertEquals(ex, ac, 0);
     }
     
@@ -155,8 +177,10 @@ public class PointJUnitTest {
         A.setY(0);
         B.setX(0);
         B.setY(10);
+        l.setFirstPoint(A);
+        l.setSecondPoint(B);
         double ex = 10;
-        double ac = A.findDistanceFormula(B);
+        double ac = l.calculateDistance();
         assertEquals(ex, ac, 0);
     }
 }

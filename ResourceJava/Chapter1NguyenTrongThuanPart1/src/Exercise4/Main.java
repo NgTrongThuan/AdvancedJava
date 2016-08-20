@@ -35,11 +35,11 @@ public class Main {
             Point R = new Point(xR, yR);           
             Circle C = new Circle(O, R);
             
-            double perimeter = C.findPerimeter();
-            double area = C.findArea();
+            double perimeter = C.calculatePerimeter();
+            double area = C.calculateArea();
             
-            System.out.println("P = " + perimeter);
-            System.out.println("A = " + area);
+            System.out.println("Primeter of circle = " + perimeter);
+            System.out.println("Area of circle = " + area);
         }catch(NumberFormatException | NullPointerException ex){
             System.out.println("ERROR: " + ex.getMessage());
         }

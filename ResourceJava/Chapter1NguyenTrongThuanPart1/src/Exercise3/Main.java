@@ -31,10 +31,10 @@ public class Main {
             int yB = Integer.parseInt(input.readLine());
             
             Point A = new Point(xA, yA);
-            Point B = new Point(xB, yB);
-            
-            double result = A.findDistanceFormula(B);
-            System.out.println("Distance of Point A and B is: " + result);
+            Point B = new Point(xB, yB);        
+            Line l = new Line(A, B);
+            double distance = l.calculateDistance();
+            System.out.println("Distance of Point A and B is: " + l.calculateDistance());
         }catch(NumberFormatException | NullPointerException ex){
             System.out.println("ERROR: " + ex.getMessage());
         }

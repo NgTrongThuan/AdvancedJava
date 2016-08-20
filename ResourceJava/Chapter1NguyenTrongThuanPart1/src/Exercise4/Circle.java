@@ -5,6 +5,7 @@
  */
 package Exercise4;
 
+import Exercise3.Line;
 import Exercise3.Point;
 
 /**
@@ -17,7 +18,7 @@ public class Circle {
 
     private Point pointO;
     private Point pointR;
-    static final double PI = 3.14;
+    final double PI = 3.14;
 
     public Circle() {
     }
@@ -26,7 +27,7 @@ public class Circle {
         this.pointO = pointO;
         this.pointR = pointR;
     }
-    
+
     public Point getPointO() {
         return pointO;
     }
@@ -43,26 +44,30 @@ public class Circle {
         this.pointR = pointR;
     }
 
+    
     /**
-     * Function find Perimeter of circle 
-     * Output: return Perimeter of circle as double type
+     * function calculate radius of Circle
+     * Output: radius of circle
      */
-    public double findPerimeter() {
-        if(this.pointO == null || this.pointR == null) throw new
-                NullPointerException("Point is null!");
-        double perimeter = 2 * this.pointO.findDistanceFormula(this.pointR) * PI;
-        return perimeter;
+    
+    public double calculateRadius(){
+        Line l = new Line();
+        l.setFirstPoint(pointO);
+        l.setSecondPoint(pointR);
+        return l.calculateDistance();
     }
-    
     /**
-     * function find area of circle
-     * output: return area of circle as type double
+     * Function find Perimeter of circle Output: return Perimeter of circle as
+     * double type
      */
-    
-    public double findArea(){
-        if(this.pointO == null || this.pointR == null) throw new
-                NullPointerException("Point is null!");
-        double area = PI*Math.pow(this.pointO.findDistanceFormula(this.pointR), 2);
-        return area;
+    public double calculatePerimeter() {      
+        return this.calculateRadius() * 2 * PI;
+    }
+
+    /**
+     * function find area of circle output: return area of circle as type double
+     */
+    public double calculateArea() {
+        return PI * Math.pow(this.calculateRadius(), 2);
     }
 }

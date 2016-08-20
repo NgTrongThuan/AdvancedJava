@@ -11,7 +11,9 @@ import java.io.InputStreamReader;
 
 /**
  *
- * @author Win7-64 SP1
+ * @author Nguyen Trong Thuan
+ * @date: 19/08/2016
+ * @version 1
  */
 public class Main {
 

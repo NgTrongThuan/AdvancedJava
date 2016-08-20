@@ -18,14 +18,13 @@ import static org.junit.Assert.*;
  *
  * @author Nguyen Trong Thuan
  * @date: 19/08/2016
- * @version 1
- * -----------------------------
- * Unit test for perimeter of rectangle
- * Output: compare value actual and expected
+ * @version  1
+ * Unit test for function calculate area of rectangle
+ * Output: compare actual value and expected value
  */
-public class PerimeterJUnitTest {
+public class AreaJUnitTest {
     
-    public PerimeterJUnitTest() {
+    public AreaJUnitTest() {
     }
     
     @BeforeClass
@@ -57,119 +56,119 @@ public class PerimeterJUnitTest {
     Rectangle rec = new Rectangle();
     
     @Test
-    public void testPerimeter1(){
+    public void testArea1(){
         pointA.setX(1);
         pointA.setY(2);
         pointC.setX(3);
         pointC.setY(4);
         rec.setA(pointA);
         rec.setC(pointC);
-        double ex = 8;
-        double ac = rec.calculatePerimeter();
+        double ex = 4;
+        double ac = rec.calculateArea();
         assertEquals(ex, ac, 0);
     }
     
     @Test
-    public void testPerimeter2(){
+    public void testArea2(){
         pointA.setX(1);
         pointA.setY(2);
         pointC.setX(3);
         pointC.setY(5);
         rec.setA(pointA);
         rec.setC(pointC);
-        double ex = 10;
-        double ac = rec.calculatePerimeter();
+        double ex = 6;
+        double ac = rec.calculateArea();
         assertEquals(ex, ac, 0);
     }
     
     @Test
-    public void testPerimeter3(){
+    public void testArea3(){
         pointA.setX(1);
         pointA.setY(2);
         pointC.setX(4);
         pointC.setY(4);
         rec.setA(pointA);
         rec.setC(pointC);
-        double ex = 10;
-        double ac = rec.calculatePerimeter();
+        double ex = 6;
+        double ac = rec.calculateArea();
         assertEquals(ex, ac, 0);
     }
     
     @Test
-    public void testPerimeter5(){
+    public void testArea5(){
         pointA.setX(2);
         pointA.setY(2);
         pointC.setX(3);
         pointC.setY(4);
         rec.setA(pointA);
         rec.setC(pointC);
-        double ex = 6;
-        double ac = rec.calculatePerimeter();
+        double ex = 2;
+        double ac = rec.calculateArea();
         assertEquals(ex, ac, 0);
     }
     
     @Test
-    public void testPerimeter6(){
+    public void testArea6(){
         pointA.setX(4);
         pointA.setY(2);
         pointC.setX(3);
         pointC.setY(4);
         rec.setA(pointA);
         rec.setC(pointC);
-        double ex = 6;
-        double ac = rec.calculatePerimeter();
+        double ex = 2;
+        double ac = rec.calculateArea();
         assertEquals(ex, ac, 0);
     }
     
     @Test
-    public void testPerimeter7(){
+    public void testArea7(){
         pointA.setX(0);
         pointA.setY(2);
         pointC.setX(3);
         pointC.setY(4);
         rec.setA(pointA);
         rec.setC(pointC);
-        double ex = 10;
-        double ac = rec.calculatePerimeter();
+        double ex = 6;
+        double ac = rec.calculateArea();
         assertEquals(ex, ac, 0);
     }
     
     @Test
-    public void testPerimeter8(){
+    public void testArea8(){
         pointA.setX(1);
         pointA.setY(0);
         pointC.setX(3);
         pointC.setY(4);
         rec.setA(pointA);
         rec.setC(pointC);
-        double ex = 12;
-        double ac = rec.calculatePerimeter();
+        double ex = 8;
+        double ac = rec.calculateArea();
         assertEquals(ex, ac, 0);
     }
     
     @Test
-    public void testPerimeter9(){
+    public void testArea9(){
         pointA.setX(1);
         pointA.setY(2);
         pointC.setX(0);
         pointC.setY(4);
         rec.setA(pointA);
         rec.setC(pointC);
-        double ex = 6;
-        double ac = rec.calculatePerimeter();
+        double ex = 2;
+        double ac = rec.calculateArea();
         assertEquals(ex, ac, 0);
     }
     
     @Test
-    public void testPerimeter10(){
+    public void testArea10(){
         pointA.setX(0);
         pointA.setY(0);
         pointC.setX(3);
         pointC.setY(4);
         rec.setA(pointA);
         rec.setC(pointC);
-        double ex = 14;
-        double ac = rec.calculatePerimeter();
+        double ex = 12;
+        double ac = rec.calculateArea();
         assertEquals(ex, ac, 0);
     }
 }

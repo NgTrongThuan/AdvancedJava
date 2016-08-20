@@ -40,8 +40,8 @@ public class Main {
                 System.out.println("Not is rectangle!");
             }else{
                 Rectangle rec = new Rectangle(pointA, pointC);
-                System.out.println("Perimeter of rectangle is: " + rec.findPerimeter());
-                System.out.println("Area of rectangle is: " + rec.findArea());
+                System.out.println("Perimeter of rectangle is: " + rec.calculatePerimeter());
+                System.out.println("Area of rectangle is: " + rec.calculateArea());
             }            
         }catch(NumberFormatException ex){
             System.out.println("ERROR: " + ex.getMessage());

@@ -64,7 +64,7 @@ public class Rectangle {
      * function find perimeter of rectangle
      * output: perimeter of rectangle as double
      */
-    public double findPerimeter(){
+    public double calculatePerimeter(){
         double perimeter = (this.getHeight() + this.getWeight()) * 2;
         return perimeter;
     }
@@ -73,7 +73,7 @@ public class Rectangle {
      * function find area of rectangle
      * output: area of rectangle as type double
      */
-    public double findArea(){
+    public double calculateArea(){
         double area = this.getHeight() * this.getWeight();
         return area;
     }
