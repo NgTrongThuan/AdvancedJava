@@ -49,6 +49,7 @@ public class Main {
                 System.out.println("------------------------------------------");
                 System.out.println("Do you want to add new CD ? (y/n)");
                 option = input.readLine().toLowerCase();
+                if(!option.equals("y") && !option.equals("n")) throw new ArithmeticException("Choice value is not valid!");
             }
             System.out.println("------------------------------------------");
             double totalPrice = 0;
