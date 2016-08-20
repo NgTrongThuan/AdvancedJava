@@ -20,7 +20,6 @@ public class Calculator {
     public Calculator() {
     }
     
-    
     public Calculator(double firstNumber, double secondNumber) {
         this.firstNumber = firstNumber;
         this.secondNumber = secondNumber;
@@ -72,5 +71,4 @@ public class Calculator {
         }
         return this.firstNumber / this.secondNumber;
     }
-
 }
