@@ -78,6 +78,7 @@ public class CD {
      */
     
     public void showCD(){
+        System.out.println("-----------------------------------------");
         System.out.println("Information of CD:");
         System.out.println("- ID: " + this.getId());
         System.out.println("- CD name:" + this.getName());

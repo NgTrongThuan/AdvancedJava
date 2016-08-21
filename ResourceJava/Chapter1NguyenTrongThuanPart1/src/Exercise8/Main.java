@@ -50,6 +50,7 @@ public class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
         try {
+            System.out.println("-----------------------------------------");
             System.out.println("Input information of infantryman: ");
             System.out.print("Input name: ");
             String nameOfIn = input.readLine();
@@ -77,12 +78,13 @@ public class Main {
 
             Trooper tr = new Trooper(nameOfTr, powerOfTr, weaponOfTr);
             System.out.println("--->Trooper created!");
-            System.out.println("-------------------------------------");
+            System.out.println("-----------------------------------------");
             System.out.println("Ready, who is first hit ");
             System.out.println("Press 1 is infantryman.");
             System.out.println("Press 2 is trooper.");
             int choice = Integer.parseInt(input.readLine());
             int result = warOfSoldier(in, tr, choice);
+            System.out.println("-----------------------------------------");
             if (result == 1) {
                 System.out.println("Infantryman win!");
             } else {

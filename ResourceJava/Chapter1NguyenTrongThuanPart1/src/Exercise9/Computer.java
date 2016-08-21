@@ -65,7 +65,7 @@ public class Computer {
      * function show information of computer
      */
     public void showInformation(){
-        System.out.println("-------------------------------");
+        System.out.println("-----------------------------------------");
         System.out.println("The details information");
         System.out.println("Seri: " + this.getSeri());
         System.out.println(String.format("Price: %.3f", this.getPrice()));

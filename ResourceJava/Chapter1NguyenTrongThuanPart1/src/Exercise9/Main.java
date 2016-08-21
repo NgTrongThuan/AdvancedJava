@@ -41,6 +41,7 @@ public class Main {
             ArrayList<Laptop> arrLaptop = new ArrayList<Laptop>();
             ArrayList<Desktop> arrDesktop = new ArrayList<Desktop>();
             while (choice.equals("y")) {
+                System.out.println("-----------------------------------------");
                 System.out.print("Input seri: ");
                 String seri = input.readLine();
                 System.out.print("Input brand: ");
