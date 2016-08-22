@@ -45,7 +45,7 @@ public class Desktop extends Computer{
     @Override
     public void showInformation(){
         super.showInformation();
-        System.out.println("CPU: " + this.getCpu());
-        System.out.println("RAM: " + this.getRam());
+        System.out.println("CPU: " + this.cpu);
+        System.out.println("RAM: " + this.ram);
     }
 }

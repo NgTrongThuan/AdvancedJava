@@ -70,9 +70,9 @@ public class Teacher extends Human{
     @Override
     public void showInformation(){
         super.showInformation();
-        System.out.println("Class manager: " + this.getManagerClass());
-        System.out.println("Rate of salary: " + this.getRateSalary());
-        System.out.println(String.format("Subvention: %.3f", this.getSubvention()));
+        System.out.println("Class manager: " + this.managerClass);
+        System.out.println("Rate of salary: " + this.rateSalary);
+        System.out.println(String.format("Subvention: %.3f", this.subvention));
         System.out.println(String.format("Salary: %.3f", this.calculateSalary()));
     }
 }

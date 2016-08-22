@@ -14,9 +14,9 @@ package Exercise8;
  * create class soldier
  */
 public class Soldier {
-    private String name;
-    private int power;
-    private String weapon;
+    public String name;
+    public int power;
+    public String weapon;
 
     public Soldier() {
     }
@@ -52,6 +52,6 @@ public class Soldier {
     }
     
     public void fight(){
-        this.setPower(this.getPower()-1);
+        this.setPower(this.power - 1);
     }
 }

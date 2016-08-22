@@ -21,6 +21,6 @@ public class Trooper extends Soldier {
 
     @Override
     public void fight() {
-        this.setPower(this.getPower() - 3);
+        this.setPower(this.power - 3);
     }
 }

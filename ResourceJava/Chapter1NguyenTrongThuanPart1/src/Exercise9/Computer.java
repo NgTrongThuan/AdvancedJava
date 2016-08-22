@@ -14,10 +14,10 @@ package Exercise9;
  * class computer
  */
 public class Computer {
-    private String seri;
-    private double price;
-    private String brand;
-    private int quantity;
+    public String seri;
+    public double price;
+    public String brand;
+    public int quantity;
 
     public Computer() {
     }
@@ -67,8 +67,17 @@ public class Computer {
     public void showInformation(){
         System.out.println("-----------------------------------------");
         System.out.println("The details information");
-        System.out.println("Seri: " + this.getSeri());
-        System.out.println(String.format("Price: %.3f", this.getPrice()));
-        System.out.println("Brand: " + this.getBrand());
+        System.out.println("Seri: " + this.seri);
+        System.out.println(String.format("Price: %.3f", this.price));
+        System.out.println("Brand: " + this.brand);
+    }
+    
+    /**
+     * function calculate money computer
+     * output: return money of computer
+     */
+    
+    public double calculateMoney(){
+        return this.price * this.quantity;
     }
 }

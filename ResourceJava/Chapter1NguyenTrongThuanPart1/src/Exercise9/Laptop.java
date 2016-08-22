@@ -55,9 +55,9 @@ public class Laptop extends Computer {
     @Override
     public void showInformation(){
         super.showInformation();
-        System.out.println("Weight: " + this.getWeight());
-        System.out.println("Time of pin: " + this.getPin());
-        System.out.println("Resolution: " + this.getResolution());
+        System.out.println("Weight: " + this.weight);
+        System.out.println("Time of pin: " + this.pin);
+        System.out.println("Resolution: " + this.resolution);
     }
     
     

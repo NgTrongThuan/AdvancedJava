@@ -92,13 +92,13 @@ public class Main {
             System.out.println("Information of laptop");
             for (Laptop laptop : arrLaptop) {
                 laptop.showInformation();
-                totalPayOfLaptop += laptop.getPrice() * laptop.getQuantity();
+                totalPayOfLaptop += laptop.calculateMoney();
             }
             System.out.println("-----------------------------------------");
             System.out.println("Information of desktop");
             for (Desktop desktop : arrDesktop) {
                 desktop.showInformation();
-                totalPayOfDesktop += desktop.getPrice() * desktop.getQuantity();
+                totalPayOfDesktop += desktop.calculateMoney();
             }
 
             double totalPay = totalPayOfDesktop + totalPayOfLaptop;

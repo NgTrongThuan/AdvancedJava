@@ -58,7 +58,7 @@ public class Student extends Human{
      * return average score of student
      */
     public double calculateAverageScore(){
-        double averageScore = (this.getScoreSemeter1() + this.getScoreSemeter2()) / 2;
+        double averageScore = (this.scoreSemester1 + this.scoreSemester2) / 2;
         return averageScore;
     }
     
@@ -68,7 +68,7 @@ public class Student extends Human{
     @Override
     public void showInformation(){
         super.showInformation();
-        System.out.println("Class: " + this.getStudentOfClass());
+        System.out.println("Class: " + this.studentOfClass);
         System.out.println("Average score: " + this.calculateAverageScore());
     }
     

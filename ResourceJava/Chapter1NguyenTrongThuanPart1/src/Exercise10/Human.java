@@ -14,10 +14,10 @@ package Exercise10;
  * create class human
  */
 public class Human {
-    private String name;
-    private String birth;
-    private String address;
-    private String phone;
+    public String name;
+    public String birth;
+    public String address;
+    public String phone;
 
     public Human() {
     }
@@ -66,9 +66,9 @@ public class Human {
      */
     public void showInformation(){
         System.out.println("-----------------------------------------");
-        System.out.println("Name: " + this.getName());
-        System.out.println("Birthday: " + this.getBirth());
-        System.out.println("Address: " + this.getAddress());
-        System.out.println("Phone: " + this.getPhone());
+        System.out.println("Name: " + this.name);
+        System.out.println("Birthday: " + this.birth);
+        System.out.println("Address: " + this.address);
+        System.out.println("Phone: " + this.phone);
     }
 }

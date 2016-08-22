@@ -14,19 +14,17 @@ package Excercise11;
  * create class transaction
  */
 public class Transaction {
-    private String id;
-    private String date;
-    private double price;
-    private double quanlity;
+    public String id;
+    public String date;
+    public double quality;
 
     public Transaction() {
     }
 
-    public Transaction(String id, String date, double price, double quanlity) {
+    public Transaction(String id, String date, double quality) {
         this.id = id;
         this.date = date;
-        this.price = price;
-        this.quanlity = quanlity;
+        this.quality = quality;
     }
 
     public String getId() {
@@ -45,24 +43,19 @@ public class Transaction {
         this.date = date;
     }
 
-    public double getPrice() {
-        return price;
+    public double getQuality() {
+        return quality;
     }
 
-    public void setPrice(double price) {
-        this.price = price;
-    }
-
-    public double getQuanlity() {
-        return quanlity;
-    }
-
-    public void setQuanlity(double quanlity) {
-        this.quanlity = quanlity;
+    public void setQuality(double quality) {
+        this.quality = quality;
     }
     
-    public double calculateMoney(){
-        double money = this.getQuanlity() * this.getPrice();
-        return money;
+    public void showInformation(){
+        System.out.println("-------------------------------------------------");
+        System.out.println("ID: " + this.id);
+        System.out.println("Date: " + this.date);
+        System.out.println("Amount: " + this.quality);
     }
+    
 }
