@@ -32,7 +32,7 @@ public class GoldTransaction extends Transaction {
     public void setGold(Gold gold) {
         this.gold = gold;
     }
-
+    
     /**
      * function calculate value of money 
      * input: type of gold, 1 is SJC9999, 2 is 24K 
@@ -50,4 +50,5 @@ public class GoldTransaction extends Transaction {
         }
         return result;
     }
+    
 }
