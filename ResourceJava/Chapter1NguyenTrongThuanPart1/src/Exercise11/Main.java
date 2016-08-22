@@ -72,7 +72,7 @@ public class Main {
                     } else {
                         GoldTransaction gold = new GoldTransaction(Gold.GOLD24K, id, date, amount);
                         arrGold.add(gold);
-                        sumMoney += gold.calculateGold(choice);
+                        sumGold += gold.calculateGold(choice);
                     }
                     System.out.println("Gold transaction is SUCCESSFULL!");
                     check = choice();

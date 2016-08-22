@@ -49,7 +49,7 @@ public class Main {
                 System.out.println("-----------------------------------------");
                 System.out.println("Option:");
                 System.out.println("Press 1: Trade employee");
-                System.out.println("Press 2: Prodction employee");
+                System.out.println("Press 2: Production employee");
                 int option = Integer.parseInt(input.readLine());
                 if(option != 1 && option != 2){
                     throw new ArithmeticException("Option value");
@@ -86,18 +86,22 @@ public class Main {
             int countPro = 0;
             System.out.println("-----------------------------------------");
             for(TradeEmployee trade : arrTrade){
-                trade.toString();
+                System.out.println(trade.toString());
                 salaryTrade += trade.calculateNetSalary();
                 countTrade ++;
             }
             for(ProductionEmployee pro: arrPro){
-                pro.toString();
-                salaryTrade += pro.calculateNetSalary();
+                System.out.println(pro.toString());
+                salaryPro += pro.calculateNetSalary();
                 countPro ++;
             }
             System.out.println("-----------------------------------------");
-            System.out.println(String.format("Average salary of trade employee: %.3f", (salaryTrade / countTrade)));
-            System.out.println(String.format("Average salary of production employee: %.3f", (salaryPro / countPro)));
+            if(countTrade != 0){
+                System.out.println(String.format("Average salary of trade employee: %.3f", (salaryTrade / countTrade)));
+            }
+            if(countPro != 0){
+                System.out.println(String.format("Average salary of production employee: %.3f", (salaryPro / countPro)));
+            }
         } catch (NumberFormatException | ArithmeticException ex) {
             System.out.println("ERROR: " + ex.getMessage());
         }

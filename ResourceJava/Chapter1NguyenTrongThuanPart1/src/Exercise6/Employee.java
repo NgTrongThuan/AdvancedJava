@@ -92,19 +92,19 @@ public class Employee {
         EnumPersonalIncomeTax pITax = null;
         double calcSalaryTax = this.calculateSalaryTax();
         if (calcSalaryTax < pITax.RATE1.getSalaryTax()) {
-            result = pITax.RATE1.calculatePersonalIncomeTax(calcSalaryTax);
-        } else if (calcSalaryTax < pITax.RATE2.getSalaryTax()) {
-            result = pITax.RATE2.calculatePersonalIncomeTax(calcSalaryTax);
-        }else if (calcSalaryTax < pITax.RATE3.getSalaryTax()) {
-            result = pITax.RATE3.calculatePersonalIncomeTax(calcSalaryTax);
-        }else if (calcSalaryTax < pITax.RATE4.getSalaryTax()) {
-            result = pITax.RATE4.calculatePersonalIncomeTax(calcSalaryTax);
-        }else if (calcSalaryTax < pITax.RATE5.getSalaryTax()) {
-            result = pITax.RATE5.calculatePersonalIncomeTax(calcSalaryTax);
-        }else if (calcSalaryTax < pITax.RATE6.getSalaryTax()) {
-            result = pITax.RATE6.calculatePersonalIncomeTax(calcSalaryTax);
+            result = EnumPersonalIncomeTax.RATE1.calculatePersonalIncomeTax(calcSalaryTax);
+        } else if (calcSalaryTax < EnumPersonalIncomeTax.RATE2.getSalaryTax()) {
+            result = EnumPersonalIncomeTax.RATE2.calculatePersonalIncomeTax(calcSalaryTax);
+        }else if (calcSalaryTax < EnumPersonalIncomeTax.RATE3.getSalaryTax()) {
+            result = EnumPersonalIncomeTax.RATE3.calculatePersonalIncomeTax(calcSalaryTax);
+        }else if (calcSalaryTax < EnumPersonalIncomeTax.RATE4.getSalaryTax()) {
+            result = EnumPersonalIncomeTax.RATE4.calculatePersonalIncomeTax(calcSalaryTax);
+        }else if (calcSalaryTax < EnumPersonalIncomeTax.RATE5.getSalaryTax()) {
+            result = EnumPersonalIncomeTax.RATE5.calculatePersonalIncomeTax(calcSalaryTax);
+        }else if (calcSalaryTax < EnumPersonalIncomeTax.RATE6.getSalaryTax()) {
+            result = EnumPersonalIncomeTax.RATE6.calculatePersonalIncomeTax(calcSalaryTax);
         }else{
-            result = pITax.RATE7.calculatePersonalIncomeTax(calcSalaryTax);
+            result = EnumPersonalIncomeTax.RATE7.calculatePersonalIncomeTax(calcSalaryTax);
         }
         return result;
     }

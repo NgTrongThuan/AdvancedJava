@@ -9,7 +9,9 @@ package Exercise12;
  *
  * @author Nguyen Trong Thuan
  * @date: 22/08/2016
- * @version 1.0 -------------------------- create class reference book
+ * @version 1.0 
+ * -------------------------- 
+ * create class reference book
  */
 public class ReferenceBook extends Book {
 
