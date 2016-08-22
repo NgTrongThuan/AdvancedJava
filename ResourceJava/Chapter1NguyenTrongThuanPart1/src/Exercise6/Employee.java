@@ -109,8 +109,20 @@ public class Employee {
         return result;
     }
     
+    /**
+     * function calculate net salary of employee
+     * output: return net salary of employee
+    */
     public double calculateNetSalary(){
         double result = this.calculateSalary() - this.calculatePersonalIncomeTax();
         return result;
     }
+
+    @Override
+    public String toString() {
+        return "Employee{" + "name=" + name + ", payRate=" + payRate + ", numOfPeople=" + numOfPeople + ", fringeBenefits=" + fringeBenefits + ", BASIC_SALARY=" + BASIC_SALARY + '}';
+    }
+    
+    
+    
 }
