@@ -19,7 +19,8 @@ import java.util.ArrayList;
 public class Main {
 
     /**
-     * @param args the command line arguments
+     * function choice
+     * output: return y is continue and else return n
      */
     public static String choice() throws IOException {
         BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
@@ -108,7 +109,7 @@ public class Main {
                 }
             }
             int countGold = 1;
-            int countMoney = 1;
+            int countMoney = 0;
             System.out.println("-----------------------------------------------");
             System.out.println("GOLD TRANSACTION");
             for (GoldTransaction gold : arrGold) {
@@ -116,7 +117,9 @@ public class Main {
                 countGold++;
             }
             System.out.println("-----------------------------------------------");
-            System.out.println(String.format("Average of money: %.3f", (sumGold / countGold)));
+            if(countGold != 0){
+                System.out.println(String.format("Average of money: %.3f", (sumGold / countGold)));
+            }
             System.out.println("-----------------------------------------------");
             System.out.println("MONEY TRANSACTION");
             for (MoneyTransaction money : arrMoney) {
@@ -124,7 +127,9 @@ public class Main {
                 countMoney++;
             }
             System.out.println("-----------------------------------------------");
-            System.out.println(String.format("Avareage of money: %.3f", (sumMoney / countMoney)));
+            if(countMoney != 0){
+                System.out.println(String.format("Avareage of money: %.3f", (sumMoney / countMoney)));
+            }
         } catch (NumberFormatException | ArithmeticException ex) {
             System.out.println("ERROR: " + ex.getMessage());
         }
