@@ -7,18 +7,19 @@
  */
 package Exercise_16;
 
-public abstract class Transport {
+public abstract class Transport extends Moving {
 	public String id;
 	public String owner;
 	public String color;
 	public String brand;
-	
+
 	public Transport() {
 		super();
 	}
 
-	public Transport(String id, String owner, String color, String brand) {
-		super();
+	public Transport(double distance, double time, double literFuel, String id, String owner, String color,
+			String brand) {
+		super(distance, time, literFuel);
 		this.id = id;
 		this.owner = owner;
 		this.color = color;
@@ -56,5 +57,5 @@ public abstract class Transport {
 	public void setBrand(String brand) {
 		this.brand = brand;
 	}
-	
+
 }

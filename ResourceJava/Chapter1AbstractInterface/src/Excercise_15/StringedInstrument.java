@@ -19,8 +19,6 @@ public class StringedInstrument extends Instrument {
 		this.numOfLine = numOfLine;
 	}
 
-
-
 	public int getNumOfLine() {
 		return numOfLine;
 	}
@@ -34,8 +32,5 @@ public class StringedInstrument extends Instrument {
 		System.out.println("Name: " + name);
 		System.out.println("Number of line: " + this.numOfLine);
 	}
-	
-	
-	
-	
+
 }

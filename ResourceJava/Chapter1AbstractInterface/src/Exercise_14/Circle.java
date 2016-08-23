@@ -1,19 +1,20 @@
 package Exercise_14;
+
 /**
  * 
  * @author Nguyen Trong Thuan
  * @date: 23/08/2016
- * @version: 1.0
- * ---------------------------
+ * @version: 1.0 
+ * --------------------------- 
  * create class circle extends shape
  */
-public class Circle extends Shape{
+public class Circle extends Shape {
 	public double r;
 
 	public Circle() {
 		super();
 	}
-	
+
 	public Circle(double r) {
 		super();
 		this.r = r;
@@ -36,6 +37,5 @@ public class Circle extends Shape{
 	public double area() {
 		return Math.PI * Math.pow(r, 2);
 	}
-	
-	
+
 }

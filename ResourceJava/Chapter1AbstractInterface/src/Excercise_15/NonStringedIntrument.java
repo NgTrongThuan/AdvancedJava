@@ -7,7 +7,7 @@
  */
 package Excercise_15;
 
-public class NonStringedIntrument extends Instrument{
+public class NonStringedIntrument extends Instrument {
 	public String howToUse;
 
 	public NonStringedIntrument() {
@@ -18,8 +18,6 @@ public class NonStringedIntrument extends Instrument{
 		super(name, brand);
 		this.howToUse = howToUse;
 	}
-
-
 
 	public String getHowToUse() {
 		return howToUse;
@@ -33,8 +31,5 @@ public class NonStringedIntrument extends Instrument{
 	public void play() {
 		System.out.println("This is use of non stringed instrument!");
 	}
-	
-	
-	
-	
+
 }
