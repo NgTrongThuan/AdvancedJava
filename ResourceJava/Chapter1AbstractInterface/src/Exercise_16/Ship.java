@@ -78,19 +78,30 @@ public class Ship extends Transport {
 	public void setTypeFuel(String typeFuel) {
 		this.typeFuel = typeFuel;
 	}
-
+	
+	/**
+	 * function calculate velocity 
+	 * output: return velocity of ship
+	 */ 
 	@Override
 	public double calculateVelocity() {
 		double result = distance / time + velocitySame - velocityReverse;
 		return result;
 	}
 
+	/**
+	 * function calcualte fuel spend 
+	 * output: return fuel spend of ship
+	 */ 
 	@Override
 	public double calcSpendFuel() {
 		double result = distance / (literFuel - fuelStart);
 		return result;
 	}
-
+	
+	/**
+	 * function show information of ship
+	 */ 
 	@Override
 	public String toString() {
 		return "Ship [weight=" + weight + ", capacity=" + capacity + ", velocitySame=" + velocitySame
