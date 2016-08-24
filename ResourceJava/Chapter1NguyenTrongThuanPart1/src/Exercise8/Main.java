@@ -85,7 +85,6 @@ public class Main {
             } else {
                 System.out.println("Tropper win!");
             }
-            
             Soldier s = new Soldier();
         } catch (NumberFormatException | ArithmeticException ex) {
             System.out.println("ERROR: " + ex.getMessage());
