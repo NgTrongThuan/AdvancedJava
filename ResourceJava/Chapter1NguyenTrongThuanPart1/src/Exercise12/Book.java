@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Exercise12;
 
 /**
@@ -101,5 +96,4 @@ public class Book {
         System.out.println("Amount: " + this.amount);
         System.out.println("Pulisher: " + this.publisher);
     }
-    
 }
