@@ -36,6 +36,9 @@ public abstract class Instrument {
 		this.brand = brand;
 	}
 	
+	/**
+	 * function play instrument
+	 */ 
 	public abstract void play();
 	
 }
