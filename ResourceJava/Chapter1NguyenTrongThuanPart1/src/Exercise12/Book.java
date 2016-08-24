@@ -6,7 +6,7 @@ package Exercise12;
  * @date: 22/08/2016
  * @version 1.0
  * --------------------------
- * create class book
+ * create class book to manager book
  */
 public class Book {
     public String id;
