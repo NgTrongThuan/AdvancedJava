@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Exercise9;
 
 /**
@@ -11,7 +6,7 @@ package Exercise9;
  * @date: 20/08/2016
  * @version 1
  * -------------------------
- * class computer
+ * class computer to manager computer
  */
 public class Computer {
     public String seri;
@@ -76,7 +71,6 @@ public class Computer {
      * function calculate money computer
      * output: return money of computer
      */
-    
     public double calculateMoney(){
         return this.price * this.quantity;
     }
