@@ -42,12 +42,20 @@ public class Rectangle extends Shape{
 	public void setWidth(double width) {
 		this.width = width;
 	}
-
+	
+	/**
+	 * function calculate perimater of rectangle
+	 * output: return perimter of retangle
+	 */
 	@Override
 	public double perimeter() {
 		return (this.height + this.width) * 2;
 	}
 
+	/**
+	 * function calculate area of area
+	 * output: return area of rectangle
+	 */ 
 	@Override
 	public double area() {
 		return (this.height * this.width);
