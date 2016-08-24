@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Exercise6;
 import Exercise6.EnumPersonalIncomeTax;
 /**
@@ -118,11 +113,11 @@ public class Employee {
         return result;
     }
 
+    /**
+     * function show information of employee
+     */ 
     @Override
     public String toString() {
         return "Employee{" + "name=" + name + ", payRate=" + payRate + ", numOfPeople=" + numOfPeople + ", fringeBenefits=" + fringeBenefits + ", BASIC_SALARY=" + BASIC_SALARY + '}';
     }
-    
-    
-    
 }
