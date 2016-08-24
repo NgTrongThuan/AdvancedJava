@@ -26,7 +26,9 @@ public class NonStringedIntrument extends Instrument {
 	public void setHowToUse(String howToUse) {
 		this.howToUse = howToUse;
 	}
-
+	/**
+	 * function play nonstring instrument
+	 */ 
 	@Override
 	public void play() {
 		System.out.println("This is use of non stringed instrument!");
