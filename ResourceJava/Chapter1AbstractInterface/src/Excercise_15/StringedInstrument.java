@@ -26,11 +26,13 @@ public class StringedInstrument extends Instrument {
 	public void setNumOfLine(int numOfLine) {
 		this.numOfLine = numOfLine;
 	}
-
+	
+	/**
+	 * function play stringed instrument
+	 */ 
 	@Override
 	public void play() {
 		System.out.println("Name: " + name);
 		System.out.println("Number of line: " + this.numOfLine);
 	}
-
 }
