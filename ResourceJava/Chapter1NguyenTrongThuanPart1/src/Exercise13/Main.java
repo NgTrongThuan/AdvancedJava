@@ -25,6 +25,9 @@ public class Main {
         return choice;
     }
 
+    /**
+     * main to add type of employee to array employee, then show information of employee.
+     */ 
     public static void main(String[] args) throws IOException {
         BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
         try {
