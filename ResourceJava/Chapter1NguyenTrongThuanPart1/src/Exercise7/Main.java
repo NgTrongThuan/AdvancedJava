@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Exercise7;
 
 import java.io.BufferedReader;
@@ -19,7 +14,7 @@ import java.util.ArrayList;
 public class Main {
 
     /**
-     * @param args the command line arguments
+     * main method add CD into array CD and manager CD
      */
     public static void main(String[] args) throws IOException {
         BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
@@ -63,5 +58,4 @@ public class Main {
             System.out.println("ERROR: " + ex.getMessage());
         }
     }
-
 }
