@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Exercise12;
 
 /**
@@ -11,7 +6,7 @@ package Exercise12;
  * @date: 22/08/2016
  * @version 1.0
  * --------------------------
- * create class textbook
+ * create class textbook to manager text book
  */
 public class TextBook extends Book{
     private int state; // state of textbook is 1 if new and is 2 if old
