@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Exercise8;
 
 /**
@@ -18,7 +13,10 @@ public class Trooper extends Soldier {
     public Trooper(String name, int power, String weapon) {
         super(name, power, weapon);
     }
-
+    
+    /**
+     * function fight power of trooper
+     */ 
     @Override
     public void fight() {
         this.setPower(this.power - 3);
