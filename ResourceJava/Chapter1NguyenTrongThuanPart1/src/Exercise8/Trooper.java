@@ -6,7 +6,7 @@ package Exercise8;
  * @date: 20/08/2016
  * @version 1 
  * ------------------------ 
- * create class trooper
+ * create class trooper to manager trooper
  */
 public class Trooper extends Soldier {
 
