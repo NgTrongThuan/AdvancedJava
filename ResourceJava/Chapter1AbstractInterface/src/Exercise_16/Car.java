@@ -37,23 +37,32 @@ public class Car extends Transport {
 	public void setModel(String model) {
 		this.model = model;
 	}
-
+	
+	/**
+	 * function calculate velocity
+	 * output: velocity
+	 */ 
 	@Override
 	public double calculateVelocity() {
 		return distance / time;
 	}
-
+	
+	/**
+	 * function calculate calculate fuel spend
+	 * output: return fuel spend
+	 */ 
 	@Override
 	public double calcSpendFuel() {
 		return distance / literFuel;
 	}
-
+	
+	/**
+	 * function show information of car
+	 */ 
 	@Override
 	public String toString() {
 		return "Car [gear=" + gear + ", model=" + model + ", id=" + id + ", owner=" + owner + ", color=" + color
 				+ ", brand=" + brand + ", distance=" + distance + ", time=" + time + ", literFuel=" + literFuel
 				+ ", calculateVelocity()=" + calculateVelocity() + ", calcSpendFuel()=" + calcSpendFuel() + "]";
 	}
-
-	
 }
