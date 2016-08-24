@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Exercise3;
 
 /**
@@ -10,7 +5,7 @@ package Exercise3;
  * @author Nguyen Trong Thuan
  * @date: 19/08/2016
  * @version 1
- * class: point
+ * class: point to manager point
  */
 public class Point {
 
