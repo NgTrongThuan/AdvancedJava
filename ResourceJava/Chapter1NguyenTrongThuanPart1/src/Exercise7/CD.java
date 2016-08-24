@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Exercise7;
 
 /**
@@ -11,7 +6,7 @@ package Exercise7;
  * @date: 20/08/2016
  * @version 1
  * ---------------------------
- * create class CD
+ * create class CD to  manager CD
  */
 public class CD {
     private String id;
