@@ -27,17 +27,21 @@ public class Square  extends Shape{
 	public void setEdge(double edge) {
 		this.edge = edge;
 	}
-
+	/**
+	 * function calculate perimeter of square
+	 * output: return perimeter of square
+	 */ 
 	@Override
 	public double perimeter() {
 		return this.edge * 4;
 	}
-
+	
+	/**
+	 * function calculate area of square
+	 * output: return area of square
+	 */ 
 	@Override
 	public double area() {
 		return Math.pow(this.edge, 2);
 	}
-	
-	
-	
 }
