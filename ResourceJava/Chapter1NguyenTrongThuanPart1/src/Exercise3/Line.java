@@ -40,6 +40,10 @@ public class Line {
         this.secondPoint = secondPoint;
     }
     
+    /**
+     * function calculate distance 2 points
+     * output: return distance between 2 points
+     */ 
     public double calculateDistance(){
         double distance = Math.sqrt(Math.pow(this.getFirstPoint().getX() - this.getSecondPoint().getX(), 2) 
                 + Math.pow(this.getFirstPoint().getY() - this.getSecondPoint().getY(), 2));
