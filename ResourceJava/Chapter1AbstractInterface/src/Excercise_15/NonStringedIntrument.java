@@ -27,11 +27,10 @@ public class NonStringedIntrument extends Instrument {
 		this.howToUse = howToUse;
 	}
 	/**
-	 * function play nonstring instrument
+	 * function play nonstringed instrument
 	 */ 
 	@Override
 	public void play() {
 		System.out.println("This is use of non stringed instrument!");
 	}
-
 }
