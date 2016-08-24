@@ -6,7 +6,7 @@ package Excercise11;
  * @date: 22/08/2016
  * @version 1
  * --------------------------
- * create enum money
+ * create enum money to manager money
  */
 public enum Money {
     USD(22000),
