@@ -22,5 +22,4 @@ public abstract class Moving implements ICalcVelocity, ICalcSpendFuel {
 		this.time = time;
 		this.literFuel = literFuel;
 	}
-
 }
