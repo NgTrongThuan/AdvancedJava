@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Exercise4;
 
 import Exercise3.Line;
@@ -13,6 +8,8 @@ import Exercise3.Point;
  * @author Nguyen Trong Thuan
  * @date: 19/08/2016
  * @version 1 class circle
+ * ------------------------
+ * create class circle to manager circle
  */
 public class Circle {
 
