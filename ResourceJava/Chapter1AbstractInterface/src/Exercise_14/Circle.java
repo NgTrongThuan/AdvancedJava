@@ -27,12 +27,20 @@ public class Circle extends Shape {
 	public void setR(double r) {
 		this.r = r;
 	}
-
+	
+	/**
+	 * Function caculate perimeter of circle
+	 * output: return perimeter of circle
+	 */ 
 	@Override
 	public double perimeter() {
 		return 2 * Math.PI * r;
 	}
-
+	
+	/**
+	 * function calculate area circle
+	 * output: return area of cirlce
+	 */
 	@Override
 	public double area() {
 		return Math.PI * Math.pow(r, 2);
