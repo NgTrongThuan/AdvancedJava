@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Exercise4;
 
 import Exercise3.Point;
@@ -12,12 +7,13 @@ import java.io.InputStreamReader;
 
 /**
  *
- * @author hv
+ * @author Nguyen Trong Thuan
+ * date: 20/08/2016
  */
 public class Main {
 
     /**
-     * @param args the command line arguments
+     * main methods call methods in class circle and show it
      */
     public static void main(String[] args) throws IOException {
         BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
@@ -44,5 +40,4 @@ public class Main {
             System.out.println("ERROR: " + ex.getMessage());
         }
     }
-    
 }
