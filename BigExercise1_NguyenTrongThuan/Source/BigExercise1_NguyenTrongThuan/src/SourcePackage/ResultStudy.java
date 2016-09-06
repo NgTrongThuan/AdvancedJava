@@ -33,7 +33,6 @@ public class ResultStudy {
 	}
 	
 	public void show(){
-		System.out.println("Học viên: " + student.getName());
 		for(ResultSubject result: arrResultSubject){
 			result.showResult();
 		}

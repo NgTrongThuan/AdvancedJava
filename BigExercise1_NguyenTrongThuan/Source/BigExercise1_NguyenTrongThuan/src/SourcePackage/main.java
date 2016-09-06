@@ -6,11 +6,16 @@ import java.io.InputStreamReader;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * 
- * @author Nguyen Trong Thuan date: 6/9/2016
- * @version : 1.0 -------------------------- main method
+ * @author Nguyen Trong Thuan 
+ * date: 6/9/2016
+ * @version : 1.0 
+ * -------------------------- 
+ * main method
  *
  */
 public class main {
@@ -22,15 +27,16 @@ public class main {
 			ArrayList<Subject> arrSubject1 = new ArrayList<>();
 			ArrayList<Subject> arrSubject2 = new ArrayList<>();
 			SimpleDateFormat format = new SimpleDateFormat("dd/MM/yyyy");
-			arrSubject1.add(new Subject(format.parse("03/10/2010"), "Math", 4, format.parse("01/10/2010")));
-			arrSubject1.add(new Subject(format.parse("03/10/2010"), "English", 4, format.parse("01/10/2010")));
-			arrSubject2.add(new Subject(format.parse("02/10/2010"), "History", 4, format.parse("01/10/2010")));
+			arrSubject1.add(new Subject(format.parse("02/10/2010"), "Toán", 4, format.parse("01/10/2010")));
+			arrSubject1.add(new Subject(format.parse("02/10/2010"), "Anh Văn", 4, format.parse("01/10/2010")));
+			arrSubject2.add(new Subject(format.parse("02/10/2010"), "Lịch sử", 4, format.parse("01/10/2010")));
 			// default teacher
 			Teacher teacher = new Teacher("tva@edu.vn", "Tran Van A", "0909741852", arrSubject1);
 
 			// default list student
 			ArrayList<Student> arrStudent1 = new ArrayList<>();
 			ArrayList<Student> arrStudent2 = new ArrayList<>();
+			Set<Student> setSt = new HashSet<Student>();
 			arrStudent1.add(new Student("hv1@student", "Nguyen Van An", "0996123545", "1/1/1995"));
 			arrStudent1.add(new Student("hv2@student", "Tran Van Binh", "0098745210", "13/10/1995"));
 			arrStudent2.add(new Student("hv3@student", "Le Thanh Nam", "0978521419", "19/5/1995"));
@@ -57,7 +63,7 @@ public class main {
 			double gradePractice = 0;
 
 			ArrayList<ResultSubject> arrResultSubject = new ArrayList<>();
-			ArrayList<ResultStudy> arrResultStudy = new ArrayList<>();
+
 			System.out.println("+++++++++++++++++++++++++++++++++++++++++++++");
 			System.out.println("Chọn lớp muốn nhập điểm");
 			System.out.println("Nhấn 1: Lớp 1");
@@ -91,11 +97,8 @@ public class main {
 							System.out.println("Ngày thứ " + i);
 							GradeOfDay gradeOfDay = new GradeOfDay();
 							System.out.println("----------------------------------------");
-							System.out.println("Điểm danh: ");
-							System.out.println("Đi học: 10 điểm");
-							System.out.println("Nghỉ học: 0 điểm");
-							System.out.println("Đi trễ: 5 điểm");
-							System.out.println("Về sớm: 5 điểm");
+							System.out.println("Điểm danh: (hướng dẫn cách tính điểm)");
+							System.out.println("Đi học: 10 điểm, Nghỉ học: 0 điểm, Đi trễ: 5 điểm, Về sớm: 5 điểm");
 							System.out.println("----------------------------------------");
 							System.out.print("Nhập điểm chuyên cần điểm danh buổi sáng: ");
 							gradeMorning = Double.parseDouble(input.readLine());
@@ -111,7 +114,6 @@ public class main {
 							}
 							System.out.print("Nhập điểm bài tập: ");
 							gradeExercise = Double.parseDouble(input.readLine());
-							gradeOfDay.setGradeExam(gradeExercise);
 							if (gradeExercise < 0 || gradeExercise > 10) {
 								throw new ArithmeticException("Nhập điểm không đúng!");
 							} else {
@@ -142,7 +144,6 @@ public class main {
 						}
 						System.out.print("Nhập điểm thực hành: ");
 						gradePractice = Double.parseDouble(input.readLine());
-						System.out.println("----------------------------------------");
 						if (gradePractice < 0 || gradePractice > 10) {
 							throw new ArithmeticException("Nhập điểm không đúng!");
 						} else {
@@ -151,7 +152,12 @@ public class main {
 						arrResultSubject.add(resultSubject);
 					}
 					ResultStudy resultStudy = new ResultStudy(arrResultSubject, student);
-					arrResultStudy.add(resultStudy);
+					System.out.println("++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+					System.out.println("Kết quả học tập của học viên: ");
+					for (Student st : class1.getM_Student()) {
+						System.out.println(st.getName());
+					}
+					resultStudy.show();
 				}
 			} else if (typeClass == 2) {
 				System.out.println("Danh sách các môn của lớp 2:");
@@ -164,7 +170,7 @@ public class main {
 				for (Student student : class2.getM_Student()) {
 					System.out.println(student.getName());
 				}
-				
+				ResultStudy resultStudy = new ResultStudy();
 				for (Student student : class2.getM_Student()) {
 					System.out.println("+++++++++++++++++++++++++++++++++++++++++++++");
 					System.out.println("Nhập điểm cho học viên: " + student.getName());
@@ -181,10 +187,7 @@ public class main {
 							GradeOfDay gradeOfDay = new GradeOfDay();
 							System.out.println("----------------------------------------");
 							System.out.println("Điểm danh: ");
-							System.out.println("Đi học: 10 điểm");
-							System.out.println("Nghỉ học: 0 điểm");
-							System.out.println("Đi trễ: 5 điểm");
-							System.out.println("Về sớm: 5 điểm");
+							System.out.println("Đi học: 10 điểm, Nghỉ học: 0 điểm, Đi trễ: 5 điểm, Về sớm: 5 điểm");
 							System.out.println("----------------------------------------");
 							System.out.print("Nhập điểm chuyên cần điểm danh buổi sáng: ");
 							gradeMorning = Double.parseDouble(input.readLine());
@@ -238,18 +241,19 @@ public class main {
 						}
 						arrResultSubject.add(resultSubject);
 					}
-					ResultStudy resultStudy = new ResultStudy(arrResultSubject, student);
-					arrResultStudy.add(resultStudy);
+					resultStudy.setStudent(student);
+					resultStudy.setArrResultSubject(arrResultSubject);
 				}
+				
+				System.out.println("++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+				System.out.println("Kết quả học tập của học viên: ");
+				for (Student st : class2.getM_Student()) {
+					System.out.println(st.getName());
+				}
+				resultStudy.show();
 			} else {
 				throw new ArithmeticException("Chọn lớp không đúng!");
 			}
-
-			System.out.println("++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
-			System.out.println("Kết quả học tập của học viên: ");
-				for(ResultStudy result : arrResultStudy){
-					result.show();
-				}
 
 		} catch (NumberFormatException | ArithmeticException ex) {
 			System.out.println("error: " + ex.getMessage());

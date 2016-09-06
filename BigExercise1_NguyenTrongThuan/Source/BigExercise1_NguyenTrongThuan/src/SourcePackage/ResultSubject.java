@@ -116,7 +116,11 @@ public class ResultSubject implements CalculateGrade {
 	 */
 	public void showResult() {
 		System.out.println("Môn: " + subject.getName());
+		System.out.println("Điểm tổng kết cá nhân: " + calcGradePersonal());
+		System.out.println("Điểm lý thuyết: " + gradeTheory);
+		System.out.println("Điểm thực hành: " + gradePractice);
 		System.out.println("Điểm trung bình môn: " + calcGrade());
+		System.out.println("--------------------------------------");
 	}
 
 }
