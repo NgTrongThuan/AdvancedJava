@@ -101,7 +101,6 @@ public class runDictionary {
 					System.out.print("Input word want remove: ");
 					String wordRemove = input.readLine();
 					int checkRemove = 0;
-					String meaningTemp;
 					for (Object o : dictionary) {
 						WordEnglish w = (WordEnglish) o;
 						if (w.getWord().equals(wordRemove)) {
