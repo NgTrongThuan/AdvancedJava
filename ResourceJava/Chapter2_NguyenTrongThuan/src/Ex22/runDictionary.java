@@ -7,6 +7,8 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.TreeSet;
 
+import Ex26.Word;
+
 /**
  * 
  * @author Nguyen Trong Thuan date: 7/9/2016
@@ -34,6 +36,20 @@ public class runDictionary {
 	 * @param args
 	 * @throws IOException
 	 */
+	
+	/**
+	 * function check object exist
+	 */
+	
+	public static boolean checkExists(Set dictionary, WordEnglish w){
+		for (Object object : dictionary) {
+			WordEnglish z = (WordEnglish) object;
+			if(z.getWord().equals(w.getWord()) && z.getMeaning().equals(w.getMeaning())){
+				return true;
+			}
+		}
+		return false;
+	}
 	public static void showMenu() {
 		System.out.println("++++++++++++++++ Menu +++++++++++++++++++");
 		System.out.println("Press 1: View dictionary");
@@ -47,9 +63,9 @@ public class runDictionary {
 		BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
 		try {
 			String check = "y";
-			Set<WordEnglish> dictionary = new HashSet<WordEnglish>();
-			WordEnglish word1 = new WordEnglish("hello", "xin chao");
-			dictionary.add(word1);
+			Set dictionary = new HashSet<>();
+			dictionary.add(new WordEnglish("hello", "xin chao"));
+			dictionary.add(new WordEnglish("hi", "xin chao"));
 			while (check.equals("y")) {
 				showMenu();
 				int choiceMenu = Integer.parseInt(input.readLine());
@@ -74,7 +90,10 @@ public class runDictionary {
 						String word = input.readLine();
 						System.out.print("Input meaning: ");
 						String meaning = input.readLine();
-						dictionary.add(new WordEnglish(word, meaning));
+						WordEnglish w = new WordEnglish(word, meaning);
+						if(!checkExists(dictionary, w)){
+							dictionary.add(w);
+						}
 						System.out.println("Add word completed!");
 				}
 					break;

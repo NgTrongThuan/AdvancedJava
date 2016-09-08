@@ -7,6 +7,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
+import java.util.TreeMap;
 import java.util.TreeSet;
 
 import Ex22.WordEnglish;
@@ -52,7 +53,7 @@ public class runManageStudent {
 		BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
 		try{
 			String check = "y";
-			Map student = new HashMap<>();
+			Map student = new TreeMap<>();
 			student.put("1", new Student("An", 20, "TPHCM"));
 			while(check.equals("y")){
 				showMenu();
