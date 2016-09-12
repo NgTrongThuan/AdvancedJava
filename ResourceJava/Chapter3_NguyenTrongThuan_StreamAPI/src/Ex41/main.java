@@ -9,8 +9,9 @@ import java.util.stream.Stream;
 /**
  * 
  * @author Nguyen Trong Thuan date: 12/09/2016
- * @version: 1.0 -------------------------- create main class to run exercise
- *           4.1
+ * @version: 1.0 
+ * -------------------------- 
+ * create main class to run exercise 4.1
  *
  */
 public class main {
