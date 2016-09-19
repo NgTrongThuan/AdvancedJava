@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<CDs>
+     <CD>
+          <id>1</id>
+          <name>CD1</name>
+          <singer>Singer 1</singer>
+          <numbersongs>55</numbersongs>
+          <price>50000.0</price>
+     </CD>
+     <CD>
+          <id>2</id>
+          <name>CD2</name>
+          <singer>Singer 2</singer>
+          <numbersongs>50</numbersongs>
+          <price>250000.0</price>
+     </CD>
+     <CD>
+          <id>3</id>
+          <name>CD3</name>
+          <singer>Singer 3</singer>
+          <numbersongs>23</numbersongs>
+          <price>320000.0</price>
+     </CD>
+     <CD>
+          <id>5</id>
+          <name>CD4</name>
+          <singer>Singer 4</singer>
+          <numbersongs>20</numbersongs>
+          <price>175000.0</price>
+     </CD>
+     <CD>
+          <id>6</id>
+          <name>CD6</name>
+          <singer>Singer 6</singer>
+          <numbersongs>50</numbersongs>
+          <price>620000.0</price>
+     </CD>
+</CDs>
