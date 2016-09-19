@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  127.0.0.1
--- Généré le :  Lun 19 Septembre 2016 à 09:06
+-- Généré le :  Lun 19 Septembre 2016 à 11:15
 -- Version du serveur :  5.6.17
 -- Version de PHP :  5.5.12
 
@@ -33,7 +33,7 @@ CREATE TABLE IF NOT EXISTS `cd` (
   `numbersongs` int(11) NOT NULL,
   `price` double NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=7 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=8 ;
 
 --
 -- Contenu de la table `cd`
@@ -44,7 +44,8 @@ INSERT INTO `cd` (`id`, `name`, `singer`, `numbersongs`, `price`) VALUES
 (2, 'CD2', 'Singer 2', 50, 250000),
 (3, 'CD3', 'Singer 3', 23, 320000),
 (5, 'CD4', 'Singer 4', 20, 175000),
-(6, 'CD6', 'Singer 6', 50, 620000);
+(6, 'CD6', 'Singer 6', 50, 620000),
+(7, 'MyCD', 'My Singer', 10, 10);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
