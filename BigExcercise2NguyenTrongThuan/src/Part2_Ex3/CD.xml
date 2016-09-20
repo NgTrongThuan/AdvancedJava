@@ -35,4 +35,11 @@
           <numbersongs>50</numbersongs>
           <price>620000.0</price>
      </CD>
+     <CD>
+          <id>7</id>
+          <name>MyCD</name>
+          <singer>My Singer</singer>
+          <numbersongs>10</numbersongs>
+          <price>10.0</price>
+     </CD>
 </CDs>
